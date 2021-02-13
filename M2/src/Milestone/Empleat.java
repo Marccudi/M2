@@ -7,5 +7,9 @@ public class Empleat {
 //		return SOU_BASE;
 //	}
 
+	public double bonus(double souBrutAnu) {
+		double res=souBrutAnu*1.1;
+		return res;
+	}
 	
 }

@@ -3,10 +3,13 @@ package Milestone;
 public class Volunteer extends Empleat{
 	protected String nom;
 	protected double sou;
+	protected double ajut;
 	
-	public Volunteer(String nom) {
+	public Volunteer(String nom, double ajut) {
 		this.nom = nom;
 		this.sou=0;
+		this.ajut=ajut;
+		this.sou+=ajut;
 	}
 
 	public String getNom() {
@@ -24,10 +27,7 @@ public class Volunteer extends Empleat{
 	public void setSou(double sou) {
 		this.sou = sou;
 	}
+	
 
-	@Override
-	public String toString() {
-		return "Volunteer [nom=" + nom + ", sou=" + sou + "]";
-	}
 
 }
